@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head>
+<title>Your Cart</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head><body>
+<nav class="navbar">
+    <div class="logo">
+        <img src="Images/logo.jpg" alt="logo">
+        <span class="logo-text">Sherbet Holmes</span>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<div class="banner">Your Cart</div>
+<section><div id="cart-items"></div>
+<h2>Total: Rs <span id="total-price">0</span></h2>
+    <br>
+    <input type="text" placeholder="Enter Discount Code" class="discount-input">
+    <button class="btn">Apply Code</button>
+
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      loadCartItems(); 
+      updateCartCount();
+  });
+</script>
+
+<footer class="footer">
+    © 2025 Sherbet Holmes Ice Cream Shop
+</footer>
+</body></html>
